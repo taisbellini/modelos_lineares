@@ -31,6 +31,11 @@ sqt = sum((y-mean(y))^2)
 r2 = 1 - (sqr/sqt)
 # resultado: 96%
 
+# 3.3 Erros padrao (precisao)
+e.hat = result$res
+sigma2 = sum(e.hat^2)/length(e.hat)-2
+
+
 # Cap 3 - Exercicio 2 #
 
 X1 = matrix(c(1, 4, 5, 6),nrow = 4, ncol = (2-1))
